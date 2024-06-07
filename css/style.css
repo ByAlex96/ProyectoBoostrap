@@ -42,9 +42,10 @@
 /***** INICIO CONTACTO *****/
 
 #enviar:hover,
-#borrar:hover {
+#borrar:hover,
+#routeBtn:hover {
     background: darkorange;
-    transform: scale(1.2);
+    transform: scale(1.2) !important;
 }
 
 
