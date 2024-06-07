@@ -6,119 +6,15 @@
     --box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25);
 }
 
-
-/***** INICIO ESTILOS HEADER *****/
-
-.header ul,
-.header span,
-.header li {
+.header ,.slider-text{
     font-family: 'Quicksand', sans-serif !important;
-    color: var(--black) !important;
-    justify-content: end;
-    font-size: 1.4rem;
-    font-weight: bolder;
-    cursor: pointer;
 }
 
-
-.bg-body-tertiary {
-    background-color: var(--white) !important;
-}
-
-
-.nav-item {
-    font-size: 90% !important;
-}
-
-.container-fluid {
-    font-family: 'Quicksand', sans-serif !important;
-    color: var(--black);
-    justify-content: end;
-    font-size: 1.4rem;
-    font-weight: bolder;
-    cursor: pointer;
-}
-
-/***** FIN HEADER *****/
-
-/***** INICIO MAIN *****/
-
-.home {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    background: url(/images/back.png)no-repeat;
-    background-size: cover;
-    background-position: center center;
-    padding-top: 7rem;
-}
-
-.home .homeContent {
-    width: 50%;
-    float: left;
-    text-align: center;
-    padding: 4rem;
-}
-
-.home .homeContent h2 {
-    font-size: 4rem;
-    font-weight: bolder;
-    margin-bottom: 2rem;
-    line-height: 4rem;
-    color: var(--black);
+.home .homeContent h2 ,.slider-text{
     text-shadow: var(--box-shadow);
 }
 
-.home .homeContent p {
-    font-size: 1.3rem;
-    line-height: 1;
-    margin-bottom: 2rem;
-}
-
-.home .homeContent .home-btn {
-    height: 3rem;
-}
-
-.home .homeContent .home-btn button {
-    font-size: 1rem;
-    background-color: var(--black);
-    color: var(--white);
-    border-radius: .7rem;
-    padding: .7rem 2.4rem;
-    cursor: pointer;
-}
-
-.home .homeContent .home-btn button:hover {
-    font-size: 2rem;
-
-}
-
-section {
-    padding: 2rem;
-}
-
-/***** FIN MAIN *****/
-
 /***** INICIO SLIDER *****/
-.slider {
-    display: flex;
-    justify-content: center;
-    background: url(/images/backGround.png) no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-}
-
-.carousel-item-next,
-.carousel-item-prev,
-.carousel-item.active {
-    text-align: center;
-}
-
-.carousel-indicators {
-    height: 400px;
-    object-fit: cover;
-}
 
 /***** INICIO SLIDER *****/
 
@@ -375,23 +271,3 @@ th {
 }
 
 /***** FIN CONTACTO *****/
-
-
-/***** INICIO FOOTER *****/
-
-.footer {
-    margin-left: 10rem;
-    margin-right: 10rem;
-}
-
-.footer ul {
-    font-family: 'Quicksand', sans-serif !important;
-    color: var(--black);
-    justify-content: end;
-    font-size: 1.4rem;
-    font-weight: bolder;
-    cursor: pointer;
-}
-
-
-/***** FIN FOOTER *****/

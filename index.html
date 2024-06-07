@@ -8,10 +8,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="header">
+    <header class="header fs-5 fw-bolder cursor-pointer ">
         <div class="container-navbar">
             <div class="container">
                 <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
@@ -34,24 +35,24 @@
 
     <main>
         <!--- Inicio Section Header --->
-        <section class="home" id="home">
-            <div class="homeContent">
-                <h2>Deliciosas tartas para todos</h2>
-                <p>
+        <section class="home vh-100 d-flex align-items-center p-2rem"
+            style="background: url(/images/back.png) no-repeat; background-size: cover; background-position: center center; padding-top: 7rem;"
+            id="home">
+            <div class="homeContent w-50 text-center p-5">
+                <h2 class="display-2 fw-bolder mb-5">Deliciosas tartas para todos</h2>
+                <p class="fs-5 lh-1 mb-4">
                     Tradición artesanal y sabor auténtico en cada bocado, endulzando tu día desde 19XX.
                 </p>
-                <div class="home-btn">
-                    <a href="#"><button>Ver mas</button></a>
-                </div>
             </div>
         </section>
         <!--- Fin Section Header --->
 
 
         <!--- Inicio Section Slider --->
-        <section class="slider">
+        <section class="slider d-flex justify-content-center"
+            style="background-image: url(/images/backGround.png); background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed; mb-4">
             <div id="carouselExampleCaptions" class="carousel slide w-75">
-                <div class="carousel-indicators">
+                <div class="carousel-indicators ">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
@@ -63,16 +64,19 @@
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
                         aria-label="Slide 5"></button>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
+                <div class="carousel-inner text-center mt-5">
+                    <div class="carousel-item active object-fit-cover img-height-400">
                         <img src="http://picsum.photos/800/400"
                             class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
                             xmlns="http://www.w3.org/2000/svg" alt="imagen random" preserveAspectRatio="xMidYMid slice"
                             focusable="false">
                         <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555"
-                            dy=".3em">First slide</text>
+                        <rect width="100%" height="100%" fill="#777"></rect><text  x="50%" y="50%"
+                            fill="#555" dy=".3em"> </text>
                         </img>
+                        <div class="slider-text">
+                            Nuestros Postres más populares!
+                        </div>
                         <div class="carousel-caption d-none d-md-block">
                             <h2>First slide label</h2>
                             <p>Some representative placeholder content for the first slide.</p>
@@ -298,9 +302,9 @@
 
     </main>
 
-        <!-- INICIO FOOTER -->
+    <!-- INICIO FOOTER -->
     <footer>
-        <div class="footer">
+        <div class="footer header fs-5 fw-bolder cursor-pointer mx-5">
 
             <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
                 <a href="#" class="logo"><img src="images/logo.png" alt="Logo" /></a>
@@ -338,9 +342,9 @@
             </footer>
         </div>
     </footer>
-        <!-- FIN FOOTER -->
+    <!-- FIN FOOTER -->
 
-        <!-- JS Link -->
+    <!-- JS Link -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
