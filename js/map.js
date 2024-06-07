@@ -1,15 +1,15 @@
 /************** CONTACTO **************/
 
 function initMap() {
-    var Barbería = { lat: 40.4412286, lng: -3.6974367 };
+    var reposteria = { lat: 40.4412286, lng: -3.6974367 };
     var map = new google.maps.Map(document.getElementById('map'), {
-        center: Barbería,
+        center: reposteria,
         zoom: 15
     });
     var marker = new google.maps.Marker({
-        position: Barbería,
+        position: reposteria,
         map: map,
-        title: 'Barbería ByAlex'
+        title: 'reposteria'
     });
 
     var directionsService = new google.maps.DirectionsService();
@@ -18,7 +18,7 @@ function initMap() {
 
     var calculateRoute = function () {
         var start = document.getElementById('start').value;
-        var end = Barbería;
+        var end = reposteria;
         var request = {
             origin: start,
             destination: end,

@@ -35,14 +35,18 @@
 
     <main>
         <!--- Inicio Section Header --->
-        <section class="home vh-100 d-flex align-items-center p-2rem"
+        <section class="home vh-80 d-flex align-items-center p-2rem"
             style="background: url(/images/back.png) no-repeat; background-size: cover; background-position: center center; padding-top: 7rem;"
             id="home">
-            <div class="homeContent w-50 text-center p-5">
-                <h2 class="display-2 fw-bolder mb-5">Deliciosas tartas para todos</h2>
-                <p class="fs-5 lh-1 mb-4">
-                    Tradición artesanal y sabor auténtico en cada bocado, endulzando tu día desde 19XX.
-                </p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 offset-md-3 homeContent text-center p-5">
+                        <h2 class="display-2 fw-bolder mb-5">Deliciosas tartas para todos</h2>
+                        <p class="fs-5 lh-1 mb-4">
+                            Tradición artesanal y sabor auténtico en cada bocado, endulzando tu día desde 19XX.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
         <!--- Fin Section Header --->
@@ -50,103 +54,105 @@
         <!--- Inicio Section Slider --->
         <section class="slider d-flex justify-content-center"
             style="background-image: url(/images/backGround.png); background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed; mb-4">
-            <div id="carouselExampleCaptions" class="carousel slide w-75 my-5">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-                        aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
-                        aria-label="Slide 5"></button>
-                </div>
-                <div class="carousel-inner text-center ">
-                    <div class="carousel-item active object-fit-cover img-height-400">
-                        <img src="http://picsum.photos/800/400"
-                            class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
-                            xmlns="http://www.w3.org/2000/svg" alt="imagen random" preserveAspectRatio="xMidYMid slice"
-                            focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em">
-                        </text>
-                        </img>
+            <div class="container">
+                <div id="carouselExampleCaptions" class="carousel slide w-100 my-5">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner text-center ">
+                        <div class="carousel-item active object-fit-cover img-height-400">
+                            <img src="http://picsum.photos/800/400"
+                                class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
+                                xmlns="http://www.w3.org/2000/svg" alt="imagen random"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555"
+                                dy=".3em">
+                            </text>
+                            </img>
 
-                        <div class="carousel-caption d-none d-md-block">
-                            <h2>First slide label</h2>
-                            <p>Some representative placeholder content for the first slide.</p>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>First slide label</h2>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="http://picsum.photos/800/401"
+                                class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
+                                xmlns="http://www.w3.org/2000/svg" alt="imagen random"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444"
+                                dy=".3em"></text>
+                            </img>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Second slide label</h5>
+                                <p>Some representative placeholder content for the second slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="http://picsum.photos/800/402"
+                                class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
+                                xmlns="http://www.w3.org/2000/svg" alt="imagen random"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333"
+                                dy=".3em"></text>
+                            </img>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Third slide label</h5>
+                                <p>Some representative placeholder content for the third slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="http://picsum.photos/800/404"
+                                class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
+                                xmlns="http://www.w3.org/2000/svg" alt="imagen random"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333"
+                                dy=".3em"></text>
+                            </img>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Cuarto slide label</h5>
+                                <p>Some representative placeholder content for the cuarto slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="http://picsum.photos/800/405"
+                                class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
+                                xmlns="http://www.w3.org/2000/svg" alt="imagen random"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333"
+                                dy=".3em"></text>
+                            </img>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Third slide label</h5>
+                                <p>Some representative placeholder content for the quinto slide.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="http://picsum.photos/800/401"
-                            class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
-                            xmlns="http://www.w3.org/2000/svg" alt="imagen random" preserveAspectRatio="xMidYMid slice"
-                            focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444"
-                            dy=".3em"></text>
-                        </img>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="http://picsum.photos/800/402"
-                            class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
-                            xmlns="http://www.w3.org/2000/svg" alt="imagen random" preserveAspectRatio="xMidYMid slice"
-                            focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333"
-                            dy=".3em"></text>
-                        </img>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="http://picsum.photos/800/404"
-                            class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
-                            xmlns="http://www.w3.org/2000/svg" alt="imagen random" preserveAspectRatio="xMidYMid slice"
-                            focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333"
-                            dy=".3em"></text>
-                        </img>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Cuarto slide label</h5>
-                            <p>Some representative placeholder content for the cuarto slide.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="http://picsum.photos/800/405"
-                            class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
-                            xmlns="http://www.w3.org/2000/svg" alt="imagen random" preserveAspectRatio="xMidYMid slice"
-                            focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333"
-                            dy=".3em"></text>
-                        </img>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the quinto slide.</p>
-                        </div>
-                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
         </section>
 
         <div class="slider-text d-flex justify-content-center align-items-center text-center "
@@ -157,76 +163,84 @@
         <!--- Fin Section Slider --->
 
         <!--- Inicio Section Cards --->
-
         <section class="cards d-flex justify-content-center pb-4"
             style="background-image: url(/images/backGround.png); background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed;">
-            <div class="row row-cols-1 row-cols-md-2 g-4 w-75">
-                <div class="col">
-                    <div class="card">
-                        <img src="http://picsum.photos/800/406" class="bd-placeholder-img card-img-top" width="100%"
-                            height="140" xmlns="http://www.w3.org/2000/svg" role="img"
-                            aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
-                            dy=".3em" class="text-center">Image cap</text>
-                        </img>
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
+            <div class="container mt-5">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <img src="http://picsum.photos/800/406" class="bd-placeholder-img card-img-top" width="100%"
+                                height="140" xmlns="http://www.w3.org/2000/svg" role="img"
+                                aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice"
+                                focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
+                                dy=".3em" class="text-center">Image cap</text>
+                            </img>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in
+                                    to additional content. This content is a little bit longer.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="http://picsum.photos/800/407" class="bd-placeholder-img card-img-top" width="100%"
-                            height="140" xmlns="http://www.w3.org/2000/svg" role="img"
-                            aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
-                            dy=".3em" class="text-center">Image cap</text>
-                        </img>
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
+                    <div class="col">
+                        <div class="card">
+                            <img src="http://picsum.photos/800/407" class="bd-placeholder-img card-img-top" width="100%"
+                                height="140" xmlns="http://www.w3.org/2000/svg" role="img"
+                                aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice"
+                                focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
+                                dy=".3em" class="text-center">Image cap</text>
+                            </img>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in
+                                    to additional content. This content is a little bit longer.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="http://picsum.photos/800/408" class="bd-placeholder-img card-img-top" width="100%"
-                            height="140" xmlns="http://www.w3.org/2000/svg" role="img"
-                            aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
-                            dy=".3em" class="text-center">Image cap</text>
-                        </img>
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content.This content is a little bit longer.</p>
+                    <div class="col">
+                        <div class="card">
+                            <img src="http://picsum.photos/800/408" class="bd-placeholder-img card-img-top" width="100%"
+                                height="140" xmlns="http://www.w3.org/2000/svg" role="img"
+                                aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice"
+                                focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
+                                dy=".3em" class="text-center">Image cap</text>
+                            </img>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in
+                                    to additional content.This content is a little bit longer.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="http://picsum.photos/800/409" class="bd-placeholder-img card-img-top" width="100%"
-                            height="140" xmlns="http://www.w3.org/2000/svg" role="img"
-                            aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
-                            dy=".3em" class="text-center">Image cap</text>
-                        </img>
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
+                    <div class="col">
+                        <div class="card">
+                            <img src="http://picsum.photos/800/409" class="bd-placeholder-img card-img-top" width="100%"
+                                height="140" xmlns="http://www.w3.org/2000/svg" role="img"
+                                aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice"
+                                focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
+                                dy=".3em" class="text-center">Image cap</text>
+                            </img>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in
+                                    to additional content. This content is a little bit longer.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </section>
 
         <!--- Fin Section Cards --->
