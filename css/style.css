@@ -14,7 +14,7 @@
 .header,
 .slider-text,
 .mapa h3,
-.producto h2 {
+.titulo-principal {
     font-family: 'Quicksand', sans-serif !important;
 }
 
@@ -40,6 +40,13 @@
 }
 
 /***** INICIO CONTACTO *****/
+
+#enviar:hover,
+#borrar:hover {
+    background: darkorange;
+    transform: scale(1.2);
+}
+
 
 
 #map {
