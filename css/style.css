@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --black: #1b1722;
+    --white: #F0F0F0;
+    --box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25);
+}
+
+
+/***** INICIO ESTILOS HEADER *****/
+
+.header ul,
+.header span,
+.header li {
+    font-family: 'Quicksand', sans-serif !important;
+    color: var(--black) !important;
+    justify-content: end;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+.bg-body-tertiary {
+    background-color: var(--white) !important;
+}
+
+
+.nav-item {
+    font-size: 90% !important;
+}
+
+.container-fluid {
+    font-family: 'Quicksand', sans-serif !important;
+    color: var(--black);
+    justify-content: end;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+/***** FIN HEADER *****/
+
+/***** INICIO MAIN *****/
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(/images/back.png)no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 7rem;
+}
+
+.home .homeContent {
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding: 4rem;
+}
+
+.home .homeContent h2 {
+    font-size: 4rem;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+    line-height: 4rem;
+    color: var(--black);
+    text-shadow: var(--box-shadow);
+}
+
+.home .homeContent p {
+    font-size: 1.3rem;
+    line-height: 1;
+    margin-bottom: 2rem;
+}
+
+.home .homeContent .home-btn {
+    height: 3rem;
+}
+
+.home .homeContent .home-btn button {
+    font-size: 1rem;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: .7rem;
+    padding: .7rem 2.4rem;
+    cursor: pointer;
+}
+
+.home .homeContent .home-btn button:hover {
+    font-size: 2rem;
+
+}
+
+section {
+    padding: 2rem;
+}
+
+/***** FIN MAIN *****/
+
+/***** INICIO SLIDER *****/
+.slider {
+    display: flex;
+    justify-content: center;
+    background: url(/images/backGround.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+    text-align: center;
+}
+
+.carousel-indicators {
+    height: 400px;
+    object-fit: cover;
+}
+
+/***** INICIO SLIDER *****/
+
+/***** INICIO CARDS *****/
+
+.cards {
+    display: flex;
+    justify-content: center;
+    background: url(/images/backGround.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.cards text {
+    text-align: center;
+}
+
+/***** FIN CARDS *****/
+
+/***** INICIO Suscripcion *****/
+
+.suscripcion {
+    background: url(/images/new.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: var(--white);
+}
+
+.suscripcion .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/***** FIN Suscripcion *****/
+
+/***** INICIO TESTIMONIO *****/
+
+.testimonios {
+    display: flex;
+    justify-content: center;
+    background: url(/images/backGround.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.testimonios img {
+    width: 5rem;
+    height: 5rem;
+    clip-path: circle(50% at 50% 50%);
+    margin: 1rem;
+}
+
+/***** FIN TESTIMONIO *****/
+
+/***** INICIO GALERÍA *****/
+
+
+
+/***** FIN GALERÍA *****/
+
+
+/***** INICIO CONTACTO *****/
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    background: url(/images/backGround.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.main-contacto {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.input-text {
+    display: inline;
+    width: 30%;
+}
+
+.titulo-form {
+    font-family: 'Quicksand', sans-serif !important;
+    color: var(--black);
+    font-size: 2rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.div-descuento ol {
+    list-style-type: circle;
+    font-size: 1em;
+    color: #333333a7;
+    padding: 5px;
+    border-radius: 3px;
+    margin-left: 5%;
+}
+
+
+.plazo-precio {
+    display: inline;
+}
+
+
+small {
+    background-color: #e74d3c;
+    border-radius: .5rem;
+    padding: .5rem;
+    color: #FFF;
+    bottom: 0px;
+    left: 0px;
+    visibility: hidden;
+}
+
+.form-control.success input {
+    border-color: #2ecc71;
+}
+
+.form-control.error input {
+    border-color: #e74d3c;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+form {
+    display: flex;
+    margin: 40px auto;
+    flex-direction: column;
+}
+
+.formularioF {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: solid 2px black;
+    margin: 30px;
+    border-radius: 15px;
+    width: 90%;
+}
+
+
+
+/*damos tamaño a los cuadros*/
+
+form div,
+form legend {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 16px;
+    line-height: 1.4rem;
+}
+
+.div-extra {
+    display: block;
+    font-size: 16px;
+    margin: 0 0 10px;
+}
+
+.label-datos {
+    min-width: 180px;
+    max-width: 180px;
+}
+
+.input-padron {
+    margin: 10px;
+    width: 60%;
+}
+
+#descuentoInfo {
+    display: block;
+    margin-top: 10px;
+    font-size: 1em;
+    color: green;
+}
+
+
+#enviar,
+#borrar {
+    width: 40%;
+    margin: 30px 20px;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--black);
+    background: rgba(255, 140, 0, 0.578);
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+#enviar:hover,
+#borrar:hover {
+    background: darkorange;
+    transform: scale(1.2);
+}
+
+
+/*Le damos estilo a la tabla con los horarios*/
+.table {
+    max-width: 80%;
+    width: 50%;
+    margin: 40px 40px 0px 25%;
+}
+
+.table thead {
+    background-color: orange;
+    font-weight: bold;
+    justify-content: center;
+}
+
+td,
+th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+.mapa {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 3em 0;
+    background: url(/images/backGround.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    flex-direction: column;
+    align-items: center;
+}
+
+#routeBtn {
+    margin-bottom: 2rem;
+}
+
+#map {
+    height: 400px;
+    /* Puedes ajustar la altura según tus necesidades */
+    width: 90%;
+}
+
+/***** FIN CONTACTO *****/
+
+
+/***** INICIO FOOTER *****/
+
+.footer {
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.footer ul {
+    font-family: 'Quicksand', sans-serif !important;
+    color: var(--black);
+    justify-content: end;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+/***** FIN FOOTER *****/
