@@ -12,7 +12,8 @@
 }
 
 .header,
-.slider-text {
+.slider-text,
+.mapa h3 {
     font-family: 'Quicksand', sans-serif !important;
 }
 
@@ -22,6 +23,7 @@
 }
 
 /***** INICIO CONTACTO *****/
+
 
 #map {
     height: 400px;

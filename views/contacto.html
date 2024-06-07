@@ -37,16 +37,21 @@
     </header>
 
     <!-- Iniciamos con el formulario -->
-    <main class="main-contacto">
+    <main class="main-contacto d-flex flex-column align-items-center justify-content-center text-center p-3"
+        style="background-image: url(/images/backGround.png);background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed;">
 
 
-        <section class="mapa">
-            <h3 class="titulo-principal">Nuestra Ubicación</h3>
+
+
+
+
+        <section class="mapa w-75">
+            <h3 class="titulo-principal display-2 fw-bolder mb-5">Nuestra Ubicación</h3>
             <p>Nuestro establecimiento está ubicado en el corazón de la ciudad</p>
             <p>Ingresa tu dirección para calcular la ruta a nuestra barbería:</p>
             <input type="text" id="start" placeholder="Ingresa tu dirección">
             <button id="routeBtn">Calcular Ruta</button>
-            <div id="map" class="frame"></div>
+            <div id="map" class="frame; my-3" ;></div>
         </section>
     </main>
     <!-- INICIO FOOTER -->

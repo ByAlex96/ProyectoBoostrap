@@ -126,5 +126,3 @@ function initMap() {
 document.addEventListener('DOMContentLoaded', function () {
     initMap();
 });
-
-}
