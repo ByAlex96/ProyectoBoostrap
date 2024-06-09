@@ -266,7 +266,7 @@
             <section class="py-5 w-75">
                 <h2 class="text-center mb-5">Client Review</h2>
                 <div class="row">
-                    <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="col-12 col-md-6 col-lg-3 mb-4" style="display: flex; flex-direction: column;">
                         <div class="card">
                             <div class="card-body text-center">
                                 <p class="card-text">Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit.
@@ -282,7 +282,39 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="col-12 col-md-6 col-lg-3 mb-4" style="display: flex; flex-direction: column;">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p class="card-text">Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit.
+                                    Repellendus, Nulla.</p>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <img src="/images/client1.jpg" alt="Client" class="rounded-circle mx-2"
+                                        style="width: 5rem; height: 5rem;">
+                                    <div>
+                                        <h5 class="card-title mb-0">Hardy Devid</h5>
+                                        <p class="text-muted">UI / UX Designer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mb-4" style="display: flex; flex-direction: column;">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p class="card-text">Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit.
+                                    Repellendus, Nulla.</p>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <img src="/images/client1.jpg" alt="Client" class="rounded-circle mx-2"
+                                        style="width: 5rem; height: 5rem;">
+                                    <div>
+                                        <h5 class="card-title mb-0">Hardy Devid</h5>
+                                        <p class="text-muted">UI / UX Designer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mb-4" style="display: flex; flex-direction: column;">
                         <div class="card">
                             <div class="card-body text-center">
                                 <p class="card-text">Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit.
@@ -299,40 +331,6 @@
                         </div>
                     </div>
                     <!-- Repite el bloque para más testimonios -->
-                    <div class="col-md-6 col-lg-4 mb-4">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <p class="card-text">Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit.
-                                    Repellendus, Nulla.</p>
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <img src="/images/client1.jpg" alt="Client" class="rounded-circle mx-2"
-                                        style="width: 5rem; height: 5rem;">
-                                    <div>
-                                        <h5 class="card-title mb-0">Hardy Devid</h5>
-                                        <p class="text-muted">UI / UX Designer</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-4">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <p class="card-text">Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit.
-                                    Repellendus, Nulla.</p>
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <img src="/images/client1.jpg" alt="Client" class="rounded-circle mx-2"
-                                        style="width: 5rem; height: 5rem;">
-                                    <div>
-                                        <h5 class="card-title mb-0">Hardy Devid</h5>
-                                        <p class="text-muted">UI / UX Designer</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Añade más tarjetas según sea necesario -->
-                </div>
                 </div>
             </section>
         </section>
@@ -341,22 +339,21 @@
     </main>
 
     <!-- INICIO FOOTER -->
-    <footer>
-        <div class="footer header fs-5 fw-bolder cursor-pointer mx-5">
-
-            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-                <a href="#" class="logo"><img src="images/logo.png" alt="Logo" /></a>
-
-                <p class="col-md-4 mb-0 text-body-secondary">© Created by Mr. ByAlex Designer | Misky Yurax.inc</p>
-
-
-                <ul class="nav col-md-4 justify-content-end">
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-                    <li class="nav-item"><a href="/views/galeria.html"
-                            class="nav-link px-2 text-body-secondary">Galería</a></li>
-                    <li class="nav-item"><a href="/views/contacto.html"
-                            class="nav-link px-2 text-body-secondary">Contacto</a></li>
-                </ul>
+    <footer class="bg-light py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 d-flex align-items-center">
+                    <a href="#" class="logo mr-3"><img src="images/logo.png" alt="Logo" height="50" /></a>
+                    <p class="mb-0 text-body-secondary">© Created by Mr. ByAlex Designer | Misky Yurax.inc</p>
+                </div>
+                <div class="col-md-3 offset-md-3 col-sm-12">
+                    <h5 class="mb-3">Links</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="/views/galeria.html" class="nav-link">Galería</a></li>
+                        <li class="nav-item"><a href="/views/contacto.html" class="nav-link">Contacto</a></li>
+                    </ul>
+                </div>
                 <div class="iconos">
                     <a href="https://www.pinterest.es/Cakeshop07/">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -380,8 +377,8 @@
                         </svg>
                     </a>
                 </div>
-            </footer>
-        </div>
+    </footer>
+    </div>
     </footer>
     <!-- FIN FOOTER -->
 
