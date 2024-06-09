@@ -33,7 +33,7 @@
     font-size: 20px !important;
 }
 
-.card{
+.card {
     height: 250px;
 }
 
@@ -58,8 +58,6 @@
     background: darkorange;
     transform: scale(1.2) !important;
 }
-
-
 
 #map {
     height: 400px;
