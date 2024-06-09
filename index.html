@@ -8,10 +8,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="header">
+    <header class="header fs-5 fw-bolder cursor-pointer ">
         <div class="container-navbar">
             <div class="container">
                 <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
@@ -34,133 +35,132 @@
 
     <main>
         <!--- Inicio Section Header --->
-        <section class="home" id="home">
-            <div class="homeContent">
-                <h2>Deliciosas tartas para todos</h2>
-                <p>
-                    Tradición artesanal y sabor auténtico en cada bocado, endulzando tu día desde 19XX.
-                </p>
-                <div class="home-btn">
-                    <a href="#"><button>Ver mas</button></a>
+        <section class="home vh-80 d-flex align-items-center p-2rem"
+            style="background: url(/images/back.png) no-repeat; background-size: cover; background-position: center center; "
+            id="home">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 offset-md-3 homeContent text-center p-5">
+                        <h2 class="display-2 fw-bolder mb-5">Deliciosas tartas para todos</h2>
+                        <p class="fs-5 lh-1 mb-4">
+                            Tradición artesanal y sabor auténtico en cada bocado, endulzando tu día desde 2020.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
         <!--- Fin Section Header --->
 
-
         <!--- Inicio Section Slider --->
-        <section class="slider"
+        <section class="slider d-flex justify-content-center "
             style="background-image: url(/images/backGround.png); background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed; mb-4">
             <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-12 mx-sm-0">
-                        <div id="carouselExampleCaptions" class="carousel slide w-100">
-                            <div class="carousel-inner text-center ">
-                                <div class="carousel-item active object-fit-cover img-height-400">
-                                    <img src="http://picsum.photos/800/400"
-                                        class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800"
-                                        height="400" xmlns="http://www.w3.org/2000/svg" alt="imagen random"
-                                        preserveAspectRatio="xMidYMid slice" focusable="false">
-                                    <title>Placeholder</title>
-                                    <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%"
-                                        fill="#555" dy=".3em">
-                                    </text>
-                                    </img>
+                <div id="carouselExampleCaptions" class="carousel slide w-100 my-5">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner text-center ">
+                        <div class="carousel-item active object-fit-cover img-height-400">
+                            <img src="/images/slider1.webp"
+                                class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
+                                xmlns="http://www.w3.org/2000/svg" alt="imagen random"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555"
+                                dy=".3em">
+                            </text>
+                            </img>
 
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h2>First slide label</h2>
-                                        <p>Some representative placeholder content for the first slide.</p>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="http://picsum.photos/800/401"
-                                        class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800"
-                                        height="400" xmlns="http://www.w3.org/2000/svg" alt="imagen random"
-                                        preserveAspectRatio="xMidYMid slice" focusable="false">
-                                    <title>Placeholder</title>
-                                    <rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%"
-                                        fill="#444" dy=".3em"></text>
-                                    </img>
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Second slide label</h5>
-                                        <p>Some representative placeholder content for the second slide.</p>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="http://picsum.photos/800/402"
-                                        class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800"
-                                        height="400" xmlns="http://www.w3.org/2000/svg" alt="imagen random"
-                                        preserveAspectRatio="xMidYMid slice" focusable="false">
-                                    <title>Placeholder</title>
-                                    <rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%"
-                                        fill="#333" dy=".3em"></text>
-                                    </img>
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Third slide label</h5>
-                                        <p>Some representative placeholder content for the third slide.</p>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="http://picsum.photos/800/404"
-                                        class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800"
-                                        height="400" xmlns="http://www.w3.org/2000/svg" alt="imagen random"
-                                        preserveAspectRatio="xMidYMid slice" focusable="false">
-                                    <title>Placeholder</title>
-                                    <rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%"
-                                        fill="#333" dy=".3em"></text>
-                                    </img>
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Cuarto slide label</h5>
-                                        <p>Some representative placeholder content for the cuarto slide.</p>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="http://picsum.photos/800/405"
-                                        class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800"
-                                        height="400" xmlns="http://www.w3.org/2000/svg" alt="imagen random"
-                                        preserveAspectRatio="xMidYMid slice" focusable="false">
-                                    <title>Placeholder</title>
-                                    <rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%"
-                                        fill="#333" dy=".3em"></text>
-                                    </img>
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Third slide label</h5>
-                                        <p>Some representative placeholder content for the quinto slide.</p>
-                                    </div>
-                                </div>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Mágicas mano</h2>
+                                <p>Creando sabor y tradición con cada postre</p>
                             </div>
-                            <div class="carousel-indicators m-0 mt-1">
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                                    class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-                                    aria-label="Slide 4"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
-                                    aria-label="Slide 5"></button>
-                            </div>
-                            <button class="carousel-control-prev" type="button"
-                                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button"
-                                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
                         </div>
+                        <div class="carousel-item">
+                            <img src="/images/slider2.jpg"
+                                class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
+                                xmlns="http://www.w3.org/2000/svg" alt="imagen random"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444"
+                                dy=".3em"></text>
+                            </img>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Dulce Felicidad</h5>
+                                <p>El sabor que alegra los corazones</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/slider3.webp"
+                                class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
+                                xmlns="http://www.w3.org/2000/svg" alt="imagen random"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333"
+                                dy=".3em"></text>
+                            </img>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Dulce Placer</h5>
+                                <p>El mejor antojo para cualquier ocasión</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/slider4.jpg"
+                                class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
+                                xmlns="http://www.w3.org/2000/svg" alt="imagen random"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333"
+                                dy=".3em"></text>
+                            </img>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Felicidad en cada mordida</h5>
+                                <p>Disfrutando cada bocado con una sonrisa</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/slider5.jpg"
+                                class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
+                                xmlns="http://www.w3.org/2000/svg" alt="imagen random"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333"
+                                dy=".3em"></text>
+                            </img>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Dulce Celebración</h5>
+                                <p>Endulza tu cumpleaños con nuestros postres</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
         </section>
-        <!--- Fin Section Slider --->
 
         <div class="slider-text d-flex justify-content-center align-items-center text-center "
-            style="background-image: url(/images/backGround.png); background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed">
+            style="background-image: url(/images/backGround.png); background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed;">
             <h2 class="display-2 fw-bolder">Nuestros Postres más populares!</h2>
         </div>
 
-
+        <!--- Fin Section Slider --->
 
         <!--- Inicio Section Cards --->
         <section class="cards d-flex justify-content-center pb-4"
@@ -172,7 +172,7 @@
                             <img src="/images/card1.jpg" class="card-img-top"
                                 style="height: 140px; width: 100%; object-fit: cover;">
                             <div class="card-body">
-                                <h5 class="card-title">Tarta de Queso</h5>
+                                <h5 class="card-title">TARTA DE QUESO</h5>
                                 <p class="card-text">Nuestra tarta de queso es una delicia: suave, cremosa y con un
                                     toque dulce perfecto. ¡Un sabor irresistible que te dejará con ganas de más!
                                 </p>
@@ -184,7 +184,7 @@
                             <img src="/images/card2.jpg" class="card-img-top"
                                 style="height: 140px; width: 100%; object-fit: cover;">
                             <div class="card-body">
-                                <h5 class="card-title">Alfajores</h5>
+                                <h5 class="card-title">ALFAJORES</h5>
                                 <p class="card-text">Nuestros alfajores peruanos te transportarán a la tradición con su
                                     dulce sabor a miel y manjar blanco, ¡una combinación irresistible!</p>
                             </div>
@@ -195,7 +195,7 @@
                             <img src="/images/card3.jpg" class="card-img-top"
                                 style="height: 140px; width: 100%; object-fit: cover;">
                             <div class="card-body">
-                                <h5 class="card-title">Arroz con Leche</h5>
+                                <h5 class="card-title">ARROZ CON LECHE</h5>
                                 <p class="card-text">Disfruta del clásico arroz con leche peruano, suave, cremoso y con
                                     un toque de canela que te hará recordar la infancia.</p>
                             </div>
@@ -206,7 +206,7 @@
                             <img src="/images/card4.jpg" class="card-img-top"
                                 style="height: 140px; width: 100%; object-fit: cover;">
                             <div class="card-body">
-                                <h5 class="card-title">Mazamorra Morada</h5>
+                                <h5 class="card-title">MAZAMORRA MORADA</h5>
                                 <p class="card-text">Disfruta del clásico arroz con leche peruano, suave, cremoso y con
                                     un toque de canela que te hará recordar la infancia.</p>
                             </div>
@@ -219,8 +219,9 @@
         <!--- Fin Section Cards --->
 
         <!-- Sección de Suscripción -->
-        <section class="suscripcion">
-            <div class="container">
+        <section class="suscripcion text-white p-5"
+            style="background-image: url(/images/new.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed;">
+            <div class="container d-flex flex-column align-items-center justify-content-center">
                 <h2>Subscribe For Latest Update</h2>
                 <div class="input-group mt-3 w-75">
                     <input type="email" class="form-control" placeholder="Enter Your Email">
@@ -235,20 +236,18 @@
         <!-- Inicio Sección de Testimonios -->
         <section class="testimonios d-flex justify-content-center"
             style="background-image: url(/images/backGround.png); background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed;">
-            <section class="py-5 w-100">
-                <h2 class="text-center mb-5">Client Review</h2>
+            <section class="py-5 w-75">
+                <h2 class="text-center mb-5">Reseña de Clientes</h2>
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-3 mb-4" style="display: flex; flex-direction: column;">
                         <div class="card">
                             <div class="card-body text-center">
-                                <p class="card-text">Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit.
-                                    Repellendus, Nulla.</p>
+                                <p class="card-text mb-5">Alfajores increíbles, ¡una delicia peruana!</p>
                                 <div class="d-flex align-items-center justify-content-center">
                                     <img src="/images/client1.jpg" alt="Client" class="rounded-circle mx-2"
                                         style="width: 5rem; height: 5rem;">
                                     <div>
                                         <h5 class="card-title mb-0">Hardy Devid</h5>
-                                        <p class="text-muted">UI / UX Designer</p>
                                     </div>
                                 </div>
                             </div>
@@ -257,14 +256,12 @@
                     <div class="col-12 col-md-6 col-lg-3 mb-4" style="display: flex; flex-direction: column;">
                         <div class="card">
                             <div class="card-body text-center">
-                                <p class="card-text">Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit.
-                                    Repellendus, Nulla.</p>
+                                <p class="card-text mb-5">Arroz con leche delicioso, como el de la abuela.</p>
                                 <div class="d-flex align-items-center justify-content-center">
-                                    <img src="/images/client1.jpg" alt="Client" class="rounded-circle mx-2"
+                                    <img src="/images/cliente2.webp" alt="Client" class="rounded-circle mx-2"
                                         style="width: 5rem; height: 5rem;">
                                     <div>
-                                        <h5 class="card-title mb-0">Hardy Devid</h5>
-                                        <p class="text-muted">UI / UX Designer</p>
+                                        <h5 class="card-title mb-0">Juan José</h5>
                                     </div>
                                 </div>
                             </div>
@@ -273,14 +270,12 @@
                     <div class="col-12 col-md-6 col-lg-3 mb-4" style="display: flex; flex-direction: column;">
                         <div class="card">
                             <div class="card-body text-center">
-                                <p class="card-text">Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit.
-                                    Repellendus, Nulla.</p>
+                                <p class="card-text mb-5">¡Misky Yurax, una experiencia increíble!</p>
                                 <div class="d-flex align-items-center justify-content-center">
-                                    <img src="/images/client1.jpg" alt="Client" class="rounded-circle mx-2"
+                                    <img src="/images/cliente3.webp" alt="Client" class="rounded-circle mx-2"
                                         style="width: 5rem; height: 5rem;">
                                     <div>
-                                        <h5 class="card-title mb-0">Hardy Devid</h5>
-                                        <p class="text-muted">UI / UX Designer</p>
+                                        <h5 class="card-title mb-0">Sandra Llanos</h5>
                                     </div>
                                 </div>
                             </div>
@@ -289,14 +284,12 @@
                     <div class="col-12 col-md-6 col-lg-3 mb-4" style="display: flex; flex-direction: column;">
                         <div class="card">
                             <div class="card-body text-center">
-                                <p class="card-text">Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit.
-                                    Repellendus, Nulla.</p>
+                                <p class="card-text mb-5">Mazamorra morada exquisita, sabor único.</p>
                                 <div class="d-flex align-items-center justify-content-center">
-                                    <img src="/images/client1.jpg" alt="Client" class="rounded-circle mx-2"
+                                    <img src="/images/cliente4.webp" alt="Client" class="rounded-circle mx-2"
                                         style="width: 5rem; height: 5rem;">
                                     <div>
-                                        <h5 class="card-title mb-0">Hardy Devid</h5>
-                                        <p class="text-muted">UI / UX Designer</p>
+                                        <h5 class="card-title mb-0">Ricardo Montenegro</h5>
                                     </div>
                                 </div>
                             </div>
@@ -311,45 +304,48 @@
     </main>
 
     <!-- INICIO FOOTER -->
-    <footer>
-        <div class="footer header fs-5 fw-bolder cursor-pointer mx-5">
-
-            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-                <a href="#" class="logo"><img src="/images/logo.png" alt="Logo" /></a>
-
-                <p class="col-md-4 mb-0 text-body-secondary">© Created by Mr. ByAlex Designer | Misky Yurax.inc</p>
-
-                <ul class="nav col-md-4 justify-content-end">
-                    <li class="nav-item"><a href="/index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
-                    <li class="nav-item"><a href="/views/galeria.html"
-                            class="nav-link px-2 text-body-secondary">Galería</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contacto</a></li>
-                </ul>
-                <div class="iconos">
-                    <a href="https://www.pinterest.es/Cakeshop07/">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-pinterest" viewBox="0 0 16 16">
-                            <path
-                                d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0" />
-                        </svg>
-                    </a>
-                    <a href="https://www.instagram.com/reposteria_peruana_/">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-instagram" viewBox="0 0 16 16">
-                            <path
-                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
-                        </svg>
-                    </a>
-                    <a href="https://x.com/perumuchogusto">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-twitter-x" viewBox="0 0 16 16">
-                            <path
-                                d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
-                        </svg>
-                    </a>
+    <footer class="footer fw-bolder cursor-pointer">
+        <div class="container">
+            <div class="row justify-content-between align-items-center py-3 my-4 border-top">
+                <div class="col-md-4">
+                    <a href="#" class="logo"><img src="/images/logo.png" alt="Logo" /></a>
                 </div>
-            </footer>
-        </div>
+                <div class="col-md-4 text-md-end">
+                    <p class="mb-0 text-body-secondary">© Created by Mr. ByAlex Designer | Misky Yurax.inc</p>
+                    <ul class=" nav justify-content-end fs-5">
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a>
+                        </li>
+                        <li class="nav-item"><a href="/views/galeria.html" class="nav-link px-2 text-body-secondary">Galería</a></li>
+                        <li class="nav-item"><a href="/views/contacto.html"
+                                class="nav-link px-2 text-body-secondary">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <div class="iconos">
+                        <a href="https://www.pinterest.es/Cakeshop07/">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-pinterest" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0" />
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/reposteria_peruana_/">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                            </svg>
+                        </a>
+                        <a href="https://x.com/perumuchogusto">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                            </svg>
+                        </a>
+                    </div>
+    </footer>
+    </div>
     </footer>
     <!-- FIN FOOTER -->
 
