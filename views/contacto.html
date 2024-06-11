@@ -1,110 +1,105 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Misky Yurax</title>
-    <link rel="icon" href="./assets/images/logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0YElSWC2pBGqdmXT3AnEoKrOxEy3ekdQ&callback=iniciarMap">
         </script>
-    </head>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+</head>
 
 <body>
-
-    <body>
-        <header class="header fs-5 fw-bolder cursor-pointer">
+    <header class="header fs-5 fw-bolder cursor-pointer ">
+        <div class="container-navbar">
             <div class="container">
-                <div class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+                <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
                     <a href="/"
                         class="d-flex justify-content-between mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                        <img src="/assets/images/logo.png" class="bi me-2" width="40" height="32">
+                        <img src="/images/logo.png" class="bi me-2" width="40" height="32">
                         </img>
 
                         <span class="fs-4">Misky Yurax</span>
                     </a>
 
                     <ul class="nav">
-                        <li class="nav-item"><a href="/index.html" class="nav-link">Home</a>
-                        </li>
+                        <li class="nav-item"><a href="/index.html" class="nav-link ">Home</a></li>
                         <li class="nav-item"><a href="/views/galeria.html" class="nav-link">Galería</a></li>
                         <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Contacto</a></li>
                     </ul>
-                </div>
+                </header>
             </div>
-        </header>
+    </header>
 
-        <!-- Iniciamos con el formulario -->
-        <main class="main-contacto d-flex flex-column align-items-center justify-content-center text-center pt-5 w-100"
-            style="background-image: url(/assets/images/backGround.png);background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed;">
+    <!-- Iniciamos con el formulario -->
+    <main class="main-contacto d-flex flex-column align-items-center justify-content-center text-center pt-5 w-100"
+        style="background-image: url(/images/backGround.png);background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed;">
 
-            <div class="container d-flex justify-content-center">
-                <form id="formulario" class="w-75" name="form" method="post" action="procesar.php">
-                    <fieldset>
-                        <legend class="titulo-principal display-2 fw-bolder mb-5 text-center">Formulario</legend>
-                        <div class="form-group mb-3 fw-bolder" style="font-size: 25px;">
-                            <label for="nombre" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" placeholder="Nombre" name="nombre"
-                                pattern="[A-Za-zÑñÁáÉéÍíÓóÚú]{3,40}" required
-                                oninvalid="this.setCustomValidity('El nombre debe contener entre 3 y 40 letras y espacios')"
-                                oninput="this.setCustomValidity('')">
-                            <small id="error-nombre" class="error-mensaje"></small>
-                        </div>
-                        <div class="form-group mb-3 fw-bolder" style="font-size: 25px;">
-                            <label for="apellido" class="form-label">Apellidos</label>
-                            <input type="text" name="apellido" class="form-control" id="apellido"
-                                placeholder="Apellidos" pattern="[A-Za-zÑñÁáÉéÍíÓóÚú]{4,60}" required
-                                oninvalid="this.setCustomValidity('Los apellidos deben contener entre 4 y 60 letras y espacios')"
-                                oninput="this.setCustomValidity('')">
-                            <small id="error-apellido" class="error-mensaje"></small>
-                        </div>
-                        <div class="form-group mb-3 fw-bolder" style="font-size: 25px;">
-                            <label for="correo" class="form-label">Correo Electrónico</label>
-                            <input type="text" name="correo" class="form-control" id="correo"
-                                placeholder="name@example.com"
-                                pattern="[a-zA-Z0-9._%+-]{1,20}@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}" required
-                                oninvalid="this.setCustomValidity('Por favor, introduce una dirección de correo electrónico válida.')"
-                                oninput="this.setCustomValidity('')">
-                            <small id="error-correo" class="error-mensaje"></small>
-                        </div>
-                        <div class="form-group mb-3 fw-bolder" style="font-size: 25px;">
-                            <label for="telefono" class="form-label">Teléfono</label>
-                            <input type="text" name="telefono" class="form-control" id="telefono"
-                                placeholder="XXX-XX-XX-XX" pattern="[\d]{9}$" required
-                                oninvalid="this.setCustomValidity('El teléfono debe tener 9 dígitos.')"
-                                oninput="this.setCustomValidity('')">
-                            <small id="error-telefono" class="error-mensaje"></small>
-                        </div>
-                        <div class="form-group mb-3 fw-bolder" style="font-size: 25px;">
-                            <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        </div>
-                        <div class="form-group mb-3">
-                            <input type="checkbox" id="privacidad" name="privacidad" required>
-                            <label class="label-privacidad" for="privacidad"> He leído y acepto la <u>Política de
-                                    privacidad</u>
-                            </label>
-                            <small id="error-privacidad" class="error-mensaje"></small>
-                        </div>
-                        <!-- Agregamos el botón de enviar -->
-                        <div class="p-2rem d-flex justify-content-center">
-                            <input type="submit" value="Enviar" id="enviar" class="btn btn-warning fw-bold text-white p-3 mb-4 w-50 mx-3 text text-center
+        <div class="container d-flex justify-content-center">
+            <form id="formulario" class="w-75" name="form" method="post" action="procesar.php">
+                <fieldset>
+                    <legend class="titulo-principal display-2 fw-bolder mb-5 text-center">Formulario</legend>
+                    <div class="form-group mb-3 fw-bolder" style="font-size: 25px;">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Nombre" name="nombre"
+                            pattern="[A-Za-zÑñÁáÉéÍíÓóÚú]{3,40}" required
+                            oninvalid="this.setCustomValidity('El nombre debe contener entre 3 y 40 letras y espacios')"
+                            oninput="this.setCustomValidity('')">
+                        <small id="error-nombre" class="error-mensaje"></small>
+                    </div>
+                    <div class="form-group mb-3 fw-bolder" style="font-size: 25px;">
+                        <label for="apellido" class="form-label">Apellidos</label>
+                        <input type="text" name="apellido" class="form-control" id="apellido" placeholder="Apellidos"
+                            pattern="[A-Za-zÑñÁáÉéÍíÓóÚú]{4,60}" required
+                            oninvalid="this.setCustomValidity('Los apellidos deben contener entre 4 y 60 letras y espacios')"
+                            oninput="this.setCustomValidity('')">
+                        <small id="error-apellido" class="error-mensaje"></small>
+                    </div>
+                    <div class="form-group mb-3 fw-bolder" style="font-size: 25px;">
+                        <label for="correo" class="form-label">Correo Electrónico</label>
+                        <input type="text" name="correo" class="form-control" id="correo" placeholder="name@example.com"
+                            pattern="[a-zA-Z0-9._%+-]{1,20}@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}" required
+                            oninvalid="this.setCustomValidity('Por favor, introduce una dirección de correo electrónico válida.')"
+                            oninput="this.setCustomValidity('')">
+                        <small id="error-correo" class="error-mensaje"></small>
+                    </div>
+                    <div class="form-group mb-3 fw-bolder" style="font-size: 25px;">
+                        <label for="telefono" class="form-label">Teléfono</label>
+                        <input type="text" name="telefono" class="form-control" id="telefono" placeholder="XXX-XX-XX-XX"
+                            pattern="[\d]{9}$" required
+                            oninvalid="this.setCustomValidity('El teléfono debe tener 9 dígitos.')"
+                            oninput="this.setCustomValidity('')">
+                        <small id="error-telefono" class="error-mensaje"></small>
+                    </div>
+                    <div class="form-group mb-3 fw-bolder" style="font-size: 25px;">
+                        <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="form-group mb-3">
+                        <input type="checkbox" id="privacidad" name="privacidad" required>
+                        <label class="label-privacidad" for="privacidad"> He leído y acepto la <u>Política de
+                                privacidad</u>
+                        </label>
+                        <small id="error-privacidad" class="error-mensaje"></small>
+                    </div>
+                    <!-- Agregamos el botón de enviar -->
+                    <div class="p-2rem d-flex justify-content-center">
+                        <input type="submit" value="Enviar" id="enviar" class="btn btn-warning fw-bold text-white p-3 mb-4 w-50 mx-3 text text-center
                             style=" border-radius: 5px; transition: 1s all;">
-                            <input type="reset" value="Borrar" id="borrar"
-                                class="btn btn-warning fw-bold text-white p-3 mb-4 w-50 mx-3 text-center"
-                                style="border-radius: 5px; transition: 1s all;">
-                        </div>
-                    </fieldset>
-                </form>
-            </div>
+                        <input type="reset" value="Borrar" id="borrar"
+                            class="btn btn-warning fw-bold text-white p-3 mb-4 w-50 mx-3 text-center"
+                            style="border-radius: 5px; transition: 1s all;">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
 
         <section class="mapa col-12 mt-5 col-sm-12">
-            
             <div class="container ">
                 <h3 class="titulo-principal display-2 fw-bolder mb-5 text-center">Nuestra Ubicación</h3>
                 <p>Nuestro establecimiento está ubicado en el corazón de la ciudad</p>
@@ -163,6 +158,7 @@
 
 
     <!-- JS Link -->
+    <script src="/js/map.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
