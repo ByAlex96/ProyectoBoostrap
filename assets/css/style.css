@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --black: #1b1722;
+    --white: #F0F0F0;
+    --box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25);
+}
+
+.iconos a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header,
+.slider-text,
+.mapa h3,
+.titulo-principal,
+.footer ul,
+.testimonios h2,
+.suscripcion h2 {
+    font-family: 'Quicksand', sans-serif !important;
+}
+
+.home .homeContent h2,
+.slider-text,
+.producto h2,
+.testimonios h2,
+.suscripcion h2 {
+    text-shadow: var(--box-shadow);
+}
+
+.galeriaP {
+    font-size: 20px !important;
+}
+
+.card {
+    height: 250px;
+}
+
+
+.card img {
+    height: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    opacity: 80%;
+}
+
+/***** INICIO CONTACTO *****/
+
+#enviar:hover,
+#borrar:hover,
+#routeBtn:hover {
+    background: darkorange;
+    transform: scale(1.2) !important;
+}
+
+#map {
+    height: 400px;
+    /* Puedes ajustar la altura según tus necesidades */
+    width: 90%;
+}
+
+/***** FIN CONTACTO *****/
