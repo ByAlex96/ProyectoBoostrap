@@ -95,20 +95,21 @@
 
         <div class="container">
             <section class="mapa col-12 mt-5 col-sm-12">
-
-                <div class="container ">
-                    <h3 class="titulo-principal display-2 fw-bolder mb-5 text-center">Nuestra Ubicación</h3>
+                <div class="container text-center"> <!-- Añade la clase text-center para centrar horizontalmente -->
+                    <h3 class="titulo-principal display-2 fw-bolder mb-5">Nuestra Ubicación</h3>
                     <p>Nuestro establecimiento está ubicado en el corazón de la ciudad</p>
                     <p>Ingresa tu dirección para calcular la ruta a nuestra barbería:</p>
-                    <input type="text" id="start" placeholder="Ingresa tu dirección" class="form-control">
-                    <button id="routeBtn" class="btn btn-warning mt-3 text-white w-50 p-3" fw-bold">Calcular
-                        Ruta</button>
-                    <div id="map" class="frame; my-3 w-100"></div>
+                    <input type="text" id="start" placeholder="Ingresa tu dirección" class="form-control w-75 mx-auto"> <!-- Agrega mx-auto para centrar horizontalmente -->
+                    <button id="routeBtn" class="btn btn-warning mt-3 text-white w-50 p-3 fw-bold">Calcular Ruta</button>
+                    <div id="map" class="frame my-3 w-100"></div>
                 </div>
             </section>
         </div>
+        
 
     </main>
+
+    
     <!-- INICIO FOOTER -->
     <footer class="footer fw-bolder cursor-pointer">
         <div class="container">
@@ -117,13 +118,13 @@
                     <a href="#" class="logo"><img src="/images/logo.png" alt="Logo" /></a>
                 </div>
                 <div class="col-md-4 text-md-end">
-                    <p class="mb-0 text-body-secondary">© Creado por Alxander Pérez | Misky Yurax.inc</p>
-                    <ul class=" nav justify-content-end fs-5">
-                        <li class="nav-item"><a href="/index.html" class="nav-link px-2 text-body-secondary">Home</a>
-                        </li>
-                        <li class="nav-item"><a href="/views/galeria.html"
+                    <p class="mb-0 text-body-secondary">© Creado por Alexander Pérez | Misky Yurax.inc</p>
+                    <ul class="nav justify-content-end fs-5">
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+                        <li class="nav-item"><a href="./views/galeria.html"
                                 class="nav-link px-2 text-body-secondary">Galería</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contacto</a></li>
+                        <li class="nav-item"><a href="./views/contacto.html"
+                                class="nav-link px-2 text-body-secondary">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 text-md-end">
@@ -150,8 +151,9 @@
                             </svg>
                         </a>
                     </div>
-    </footer>
-    </div>
+                </div>
+            </div>
+        </div>
     </footer>
     <!-- FIN FOOTER -->
 
