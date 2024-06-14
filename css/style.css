@@ -4,6 +4,7 @@
     --black: #1b1722;
     --white: #F0F0F0;
     --box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25);
+    font-family: 'Quicksand', sans-serif !important;
 }
 
 .iconos a {
@@ -11,22 +12,20 @@
     color: inherit;
 }
 
-.container,
-.slider-text,
-.mapa h3,
-.titulo-principal,
-.footer ul,
-.testimonios h2,
-.suscripcion h2 {
-    font-family: 'Quicksand', sans-serif !important;
+main {
+    background-image: url("../images/backGround.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 1rem;
+    /* mb-4 corresponds to a margin-bottom of 1rem (16px) in Bootstrap */
 }
 
-.home .homeContent h2,
-.slider-text,
-.producto h2,
-.testimonios h2,
-.suscripcion h2 {
-    text-shadow: var(--box-shadow);
+.home {
+    background: url(/images/back.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 .galeriaP {
@@ -34,21 +33,32 @@
 }
 
 .card {
-    height: 250px;
+    height: 300px;
 }
 
+.cards .card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
 
 .card img {
-    height: 200px;
+    height: 150px;
+    width: 100%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover img {
-    transform: scale(1.05);
+    transform: scale(1.2);
+    /* Aumenta el tamaño al 120% del original */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    opacity: 80%;
+    object-fit: cover;
+    height: 200px;
+    /* Ajusta según sea necesario */
+    width: 100%;
+    /* Ajusta según sea necesario */
+    opacity: 90%;
 }
+
 
 /***** INICIO CONTACTO *****/
 
@@ -66,3 +76,62 @@
 }
 
 /***** FIN CONTACTO *****/
+
+/***** INICIO SUSCRIPCIÓN*****/
+.suscripcion {
+    background-image: url(/images/new.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+/***** FIN SUSCRIPCIÓN *****/
+
+
+/**** INICIO TESTIMONIOS *****/
+
+
+.cardt {
+    padding-top: 5px;
+    background-color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding-bottom: 10%;
+    border-radius: 5px;
+}
+
+.cardt:hover {
+    transform: scale(1.20);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.client-img {
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.cardt:hover .client-img {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/***** FIN TESTIMONIO *****/
+
+/* Ajustar el padding en dispositivos móviles */
+@media (max-width: 576px) {
+    .testimonios .cardt-text {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/***** INICIO FORMULARIO *****/
+.form-group{
+    font-size: 25px;
+}
+
+.btn{
+    border-radius: 5px; transition: 1s all;
+}
