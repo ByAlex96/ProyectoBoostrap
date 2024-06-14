@@ -15,23 +15,21 @@
 </head>
 
 <body>
-    <header class="header fs-5 fw-bolder cursor-pointer ">
-        <div class="container-navbar">
-            <div class="container">
-                <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-                    <a href="/"
-                        class="d-flex justify-content-between mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                        <img src="/images/logo.png" class="bi me-2" width="40" height="32">
-                        </img>
-                        <span class="fs-4">Misky Yurax</span>
-                    </a>
-                    <ul class="nav">
-                        <li class="nav-item"><a href="/index.html" class="nav-link ">Home</a></li>
-                        <li class="nav-item"><a href="/views/galeria.html" class="nav-link">Galería</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Contacto</a></li>
-                    </ul>
-                </header>
+    <header class="header fs-5 fw-bolder cursor-pointer">
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+                <a href="/"
+                    class="d-flex justify-content-between mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                    <img src="/images/logo.png" class="bi me-2" width="40" height="32" alt="Logo">
+                    <span class="fs-4">Misky Yurax</span>
+                </a>
+                <ul class="nav">
+                    <li class="nav-item"><a href="/index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="/views/galeria.html" class="nav-link active" aria-current="page">Galería</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
+                </ul>
             </div>
+        </div>
     </header>
 
     <!-- Iniciamos con el formulario -->
@@ -99,17 +97,19 @@
                     <h3 class="titulo-principal display-2 fw-bolder mb-5">Nuestra Ubicación</h3>
                     <p>Nuestro establecimiento está ubicado en el corazón de la ciudad</p>
                     <p>Ingresa tu dirección para calcular la ruta a nuestra barbería:</p>
-                    <input type="text" id="start" placeholder="Ingresa tu dirección" class="form-control w-75 mx-auto"> <!-- Agrega mx-auto para centrar horizontalmente -->
-                    <button id="routeBtn" class="btn btn-warning mt-3 text-white w-50 p-3 fw-bold">Calcular Ruta</button>
+                    <input type="text" id="start" placeholder="Ingresa tu dirección" class="form-control w-75 mx-auto">
+                    <!-- Agrega mx-auto para centrar horizontalmente -->
+                    <button id="routeBtn" class="btn btn-warning mt-3 text-white w-50 p-3 fw-bold">Calcular
+                        Ruta</button>
                     <div id="map" class="frame my-3 w-100"></div>
                 </div>
             </section>
         </div>
-        
+
 
     </main>
 
-    
+
     <!-- INICIO FOOTER -->
     <footer class="footer fw-bolder cursor-pointer">
         <div class="container">
