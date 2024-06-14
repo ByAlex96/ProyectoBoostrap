@@ -12,6 +12,20 @@
     color: inherit;
 }
 
+/* Estilo para los enlaces de navegación */
+.nav-link {
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+/* Estilo para el enlace activo */
+.nav-link.active {
+    color: rgba(93, 38, 38, 0.647);
+    font-weight: bold;
+    /* Color de fondo cuando está activo */
+}
+
 main,
 .main-contacto {
     background-image: url("../images/backGround.png");
@@ -34,7 +48,7 @@ main,
     font-size: 20px !important;
 }
 
-.carousel-item img{
+.carousel-item img {
     width: 800px;
     height: 400px;
 }
